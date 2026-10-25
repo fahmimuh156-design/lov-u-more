@@ -1,0 +1,53 @@
+html_content = """
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Buat Kamu</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+        .card {
+            background: white;
+            color: #333;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        h2 { color: #ff4b5c; }
+        p { line-height: 1.6; }
+        .btn {
+            background: #ff4b5c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Maafin Aku Ya Sayang ❤️</h2>
+        <p>Aku tahu aku punya salah sama kamu. Aku minta maaf banget ya. Jangan ngambek lagi dong, senyum yuk! 😊</p>
+        <button class="btn" onclick="alert('Yeay! Makasih udah dimaafin! Love you! 💕')">Udah dimaafin kok</button>
+    </div>
+</body>
+</html>
+"""
+
+# Menyimpan isi string ke dalam file index.html
+with open("index.html", "w", encoding="utf-8") as f:
+  f.write(html_content)
+
+print("File surat berhasil dibuat dengan nama index.html!")
